@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ClientMVC.Dtos.UserViewModel>
+
+@{
+    ViewData["Title"] = "Пользователи";
+}
+
+<h3>Пользователи</h3>
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Фамилия</th>
+                <th>Возраст</th>
+                <th>Пол</th>
+                <th>Активен</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Surname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Age)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sex)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsActive)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Подробнее</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

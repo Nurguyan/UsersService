@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ClientMVC.Dtos.UserViewModel>
+
+@{
+    ViewData["Title"] = "ClientMVC";
+}
+
+<h1>ClientMVC</h1>
+
+<div class="row my-3">
+    <div class="card">
+        <div class="card-body">
+            <h6 class="card-title">Пользователи</h6>
+            <p class="card-text">Нажмите на кнопку, чтобы посмотреть пользователей</p>
+            <a class="btn btn-primary" asp-controller="User" asp-action="Index">Перейти</a>
+        </div>
+    </div>
+</div>

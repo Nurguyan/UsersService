@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+option csharp_namespace = "ClientMVC";
+
+service UsersGrpc {
+  rpc GetUsers (GetUsersRequest) returns (GetUsersResponse);
+  rpc GetUser (GetUserRequest) returns (GetUserResponse);
+  rpc UpdateUser (UpdateUserRequest) returns (UpdateUserResponse);
+  rpc DeleteUser (DeleteUserRequest) returns (DeleteUserResponse);
+}
+
+message GetUsersRequest {}
+
+message GetUsersResponse {
+  repeated UserDetail users = 1;
+}
+
+message UserDetail {
+	int32 id = 1;
+	string surname = 2;
+	int32 age = 3;
+	enum ESex{
+		NOT_KNOWN = 0;
+		MALE = 1;
+		FEMALE = 2;
+		NOT_APPLICABLE = 9;
+	}
+	ESex sex = 4;
+	bool isActive = 5;
+	repeated PhoneDto phoneDtos = 6;
+}
+
+message PhoneDto {
+	int32 id = 1;
+	string number = 2;
+}
+
+message GetUserRequest {
+	int32 id = 1;
+}
+
+message GetUserResponse {
+	UserDetail userDetail = 1;
+}
+
+message UpdateUserRequest {
+	UserDetail userDetail = 1;
+}
+
+message UpdateUserResponse {
+	UserDetail userDetail = 1;
+}
+
+message DeleteUserRequest {
+	int32 id = 1;
+}
+
+message DeleteUserResponse {
+	bool isSuccess = 1;
+}

@@ -1,0 +1,5 @@
+﻿@model ClientMVC.Dtos.PhoneViewModel
+
+<input asp-for="Id" type="hidden" />
+<input asp-for="Number" class="form-control phone" />
+<span asp-validation-for="Number" class="text-danger"></span>

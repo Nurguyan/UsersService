@@ -1,0 +1,6 @@
+﻿@model IEnumerable<ClientMVC.Dtos.PhoneViewModel>
+
+@foreach (var phone in Model)
+{
+    Html.EditorForModel(phone);
+}
