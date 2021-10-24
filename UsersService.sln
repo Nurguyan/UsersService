@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersService", "UsersService\UsersService.csproj", "{25B5A043-6077-47C9-8A04-C0744D88DE59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientMVC", "ClientMVC\ClientMVC.csproj", "{94D24370-E7FC-4B91-BC66-3B219DE5BC3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientMVC", "ClientMVC\ClientMVC.csproj", "{94D24370-E7FC-4B91-BC66-3B219DE5BC3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactClient", "ReactClient\ReactClient.csproj", "{53DD5B54-07C0-4B7A-B67F-13466DFA4138}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{94D24370-E7FC-4B91-BC66-3B219DE5BC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94D24370-E7FC-4B91-BC66-3B219DE5BC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94D24370-E7FC-4B91-BC66-3B219DE5BC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DD5B54-07C0-4B7A-B67F-13466DFA4138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DD5B54-07C0-4B7A-B67F-13466DFA4138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DD5B54-07C0-4B7A-B67F-13466DFA4138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DD5B54-07C0-4B7A-B67F-13466DFA4138}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
