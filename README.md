@@ -1,4 +1,4 @@
-# UsersService
+# Описание проектов
 ## UsersService
 Сервер: .NET5 приложение
 - Реализует клиентские методы для работы с пользователями: GetUsers(), GetUser(), UpdateUser(), DeleteUser();
